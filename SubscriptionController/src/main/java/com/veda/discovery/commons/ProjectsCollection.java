@@ -19,7 +19,7 @@ public class ProjectsCollection {
 		String csdlQuery = null;
 		DB db = null;
 		try {
-			/*if (snetId != null) {
+			if (snetId != null) {
 				db = mongoDb.getMongoDbConnection();
 				DBCollection collection = db.getCollection(mongoDb.retrieveCollectionName(MONGO_PROJECTS));
 				BasicDBObject query = new BasicDBObject();
@@ -29,7 +29,7 @@ public class ProjectsCollection {
 				if (cursor.hasNext()) {
 					csdlQuery = (String) cursor.next().get("csdl_query");
 				}
-			} */
+			} 
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
